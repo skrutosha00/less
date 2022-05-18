@@ -1,0 +1,156 @@
+body {
+  display: flex;
+}
+
+.rabbit {
+  position: fixed;
+  bottom: 0;
+  right: 3%;
+  max-width: 20%;
+}
+
+.menu {
+  margin: 5% auto auto;
+  width: 40%;
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link {
+  font-size: 3vw;
+  width: 60%;
+  height: 15vh;
+  background-image: url("../png/block.png");
+  margin: auto;
+}
+
+.shop {
+  position: relative;
+  background-image: url("../png/block.png");
+  height: 25vh;
+  justify-content: flex-end;
+}
+
+.logo {
+  position: absolute;
+  left: -5%;
+  height: 120px;
+  width: 120px;
+
+  background-image: url("../png/blue_dot.png");
+}
+
+.logo img {
+  max-width: 47%;
+  max-height: 47%;
+}
+
+.good {
+  position: relative;
+  height: 85%;
+  width: 25%;
+}
+
+.good.first {
+  margin-right: 3%;
+}
+
+.good.second {
+  margin-right: 13%;
+}
+
+.amount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2vw;
+}
+
+.button {
+  background-image: url("../png/red_dot.png");
+  height: 60px;
+  width: 60px;
+  margin: auto;
+}
+
+.button img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.price {
+  height: 10vh;
+  background-image: url("../png/small_bar.png");
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: "Livvic";
+  color: #6f97cf;
+}
+
+.price img {
+  max-height: 12px;
+}
+
+@media screen and (max-width: 760px) {
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .price {
+    bottom: -6px;
+  }
+
+  .balance_field {
+    left: 10px;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  .price {
+    height: 6vh;
+  }
+
+  .shop {
+    height: 16vh;
+  }
+}
+
+@media screen and (min-height: 750px) {
+  .link {
+    height: 10vh;
+  }
+
+  .menu {
+    height: 50%;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .shop {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .balance_field {
+    width: 320px;
+    height: 80px;
+  }
+
+  .balance {
+    font-size: 26px;
+  }
+}

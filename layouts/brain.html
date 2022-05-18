@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, width=device-width, viewport-fit=cover"
+    />
+    <link rel="shortcut icon" href="./png/icon.png" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/brain.css" />
+    <title>Over Less</title>
+  </head>
+  <body>
+    <img src="../png/man.png" alt="man" class="man" />
+
+    <div class="outcome_cont block">
+      <div class="outcome">WIN!</div>
+      <div class="stars">
+        <img src="../png/star.png" alt="star" />
+        <img src="../png/star.png" alt="star" />
+        <img src="../png/star.png" alt="star" />
+      </div>
+      <div class="retry block">RETRY</div>
+      <a><div class="next block"></div></a>
+    </div>
+
+    <div class="pause_cont block">
+      <img src="../png/pause.png" alt="pause">
+      <div class="next block">Next</div>
+    </div>
+
+    <div class="wrapper block">
+      <div class="bar_cont">
+        <div class="text">
+          <span class="level">LEVEL </span>
+          <span class="name">TIME</span>
+        </div>
+        <div class="bar_back block">
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="count_cont">
+        <div class="text">Search</div>
+        <div class="big_button block">1</div>
+      </div>
+
+      <div class="field block">
+        <div class="level_3 block hidden"></div>
+      </div>
+    </div>
+
+    <div class="sidebar top">
+      <a href="./main.html"><div class="home block"></div></a>
+      <div class="pause block"></div>
+    </div>
+
+    <div class="sidebar bottom">
+      <div class="bonus block time">
+        <span>10s</span>
+        <div class="amount"></div>
+      </div>
+      <div class="bonus block loupe">
+        <img src="../png/loupe.png" alt="loupe" />
+        <div class="amount"></div>
+      </div>
+    </div>
+    <script src="../scripts/brain.js" type="module"></script>
+  </body>
+</html>

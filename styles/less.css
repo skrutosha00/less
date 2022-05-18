@@ -1,0 +1,269 @@
+.balance.anim {
+  color: green;
+}
+
+.wrapper {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+img[alt="rabbit"] {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  max-width: 25%;
+  max-height: 80%;
+}
+
+.header {
+  font-family: "Livvic";
+  position: absolute;
+  top: 8%;
+  left: 30%;
+  width: 40%;
+  height: 10vh;
+  background-image: url("../png/bar.png");
+}
+
+.main {
+  height: 45%;
+  width: 55%;
+  margin-top: 5%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outer_card {
+  background-image: url("../png/card.png");
+  width: 31%;
+  height: 100%;
+}
+
+.card {
+  background: linear-gradient(0deg, #9400d3 0%, rgba(94, 0, 134, 0) 100%);
+  height: 97%;
+  width: 92%;
+  font-size: 10vw;
+}
+
+.circle_cont {
+  position: relative;
+
+  width: 140px;
+  height: 140px;
+}
+
+.outer_circle {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  transition: opacity 0.3s ease;
+}
+
+.outer_circle.win {
+  background-image: url("../png/green_back.png");
+}
+
+.outer_circle.lost {
+  background-image: url("../png/red_back.png");
+}
+
+.circle {
+  background-image: url("../png/circle_frame.png");
+  width: 65%;
+  height: 65%;
+  font-size: 5vw;
+
+  position: relative;
+  z-index: 2;
+}
+
+.circle img {
+  max-width: 55%;
+  max-height: 55%;
+}
+
+.control {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  height: 15vh;
+}
+
+.control .big_button {
+  width: 40%;
+  height: 10vh;
+  background-image: url("../png/block.png");
+}
+
+.cf_cont {
+  font-size: 2vw;
+  font-family: "Livvic";
+  color: #6f97cf;
+
+  margin-top: -2%;
+  width: 40%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.cf.first {
+  margin-right: 10%;
+}
+
+.cf.last {
+  margin-left: 10%;
+}
+
+.inner_control {
+  position: absolute;
+  left: calc(50% - 75px);
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control .button {
+  background-image: url("../png/blue_dot.png");
+  height: 50px;
+  width: 33.3%;
+}
+
+.control .button img {
+  max-width: 55%;
+  max-height: 55%;
+}
+
+img[alt="left"] {
+  transform: rotate(180deg);
+}
+
+.bet_control {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.bet_control .button {
+  background-image: url("../png/blue_dot.png");
+  width: 40px;
+  height: 40px;
+  font-size: 1.8vw;
+}
+
+.button_cont {
+  position: relative;
+  width: 40%;
+}
+
+.bet_control .big_button {
+  background-image: url("../png/block.png");
+  width: 100%;
+  height: 100%;
+  font-size: 3vw;
+}
+
+.text {
+  background-image: url("../png/small_bar.png");
+  font-size: 2vw;
+  width: 40%;
+  color: #6f97cf;
+  font-family: "Livvic";
+
+  position: absolute;
+  top: -30%;
+  left: 30%;
+}
+
+@media screen and (max-width: 750px) {
+  .balance_field {
+    width: 160px;
+    height: 40px;
+  }
+
+  img[alt="rabbit"] {
+    max-width: 15%;
+  }
+
+  .main,
+  .control,
+  .bet_control {
+    width: 65%;
+  }
+
+  .cf_cont {
+    width: 50%;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  .outer_card {
+    width: 35%;
+  }
+
+  .text {
+    top: -70%;
+  }
+}
+
+@media screen and (min-height: 750px) {
+  .header {
+    font-size: 20px;
+  }
+
+  img[alt="rabbit"] {
+    max-width: 20%;
+  }
+
+  .main,
+  .control,
+  .bet_control {
+    width: 65%;
+  }
+
+  .text {
+    top: -20%;
+  }
+
+  .main {
+    margin-top: 15%;
+    height: 32%;
+  }
+
+  .inner_control {
+    width: 210px;
+    left: calc(50% - 105px);
+  }
+
+  .home,
+  .button {
+    height: 70px !important;
+    width: 70px !important;
+  }
+
+  .big_button {
+    font-size: 32px;
+  }
+
+  .circle_cont {
+    width: 160px;
+    height: 160px;
+  }
+
+  .balance_field {
+    width: 240px;
+    height: 60px;
+  }
+
+  .balance {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Lilita";
+  src: url("../fonts/lilitaonerus.ttf");
+}
+
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/livvic.ttf");
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    #8b00ff -40.56%,
+    #af31ff 54.73%,
+    #9400d3 197.78%
+  );
+  height: 100vh;
+
+  font-family: "Lilita";
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  background-image: url("../png/big_frame.png");
+}
+
+.block {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.balance_field {
+  background-image: url("../png/balance.png");
+  justify-content: space-between;
+
+  width: 200px;
+  height: 50px;
+
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.balance {
+  font-size: 18px;
+  font-family: "Livvic";
+  width: 75%;
+
+  transition: color 0.3s ease;
+}
+
+.balance.anim {
+  color: red;
+}
+
+.balance_field img {
+  max-height: 65%;
+  margin-left: 6%;
+}
+
+.home {
+  background-image: url("../png/home.png");
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+}
+
+.man {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-width: 30%;
+}
