@@ -15,24 +15,6 @@ let pause = false
 let timeLeft
 let currentNum
 
-// let numData = [
-//     { location: [17, 26], size: 70 },
-//     { location: [55, 132], size: 70 },
-//     { location: [115, 16], size: 50 },
-//     { location: [244, 93], size: 50 },
-//     { location: [126, 154], size: 30 },
-//     { location: [14, 105], size: 60 },
-//     { location: [215, 25], size: 70 },
-//     { location: [76, 89], size: 45 },
-//     { location: [97, 49], size: 40 },
-//     { location: [117, 85], size: 65 },
-//     { location: [141, 54], size: 30 },
-//     { location: [220, 113], size: 80 },
-//     { location: [182, 76], size: 50 },
-//     { location: [168, 36], size: 40 },
-//     { location: [156, 141], size: 60 }
-// ]
-
 let numData = [
     { location: [17 / 320, 26 / 220], size: 70 },
     { location: [55 / 320, 132 / 220], size: 70 },
@@ -102,7 +84,7 @@ for (let i = 0; i < 15; i++) {
 startGame()
 
 function startGame() {
-    timeLeft = 30
+    timeLeft = 45
     currentNum = 1
     searchField.innerHTML = currentNum
 
@@ -116,7 +98,7 @@ function startGame() {
 
         if (!pause) {
             timeLeft -= 1
-            bar.style.width = (timeLeft / 30) * 90 + '%'
+            bar.style.width = (timeLeft / 45) * 90 + '%'
         }
     }, 1000);
 }
@@ -138,7 +120,7 @@ document.querySelector('.pause_cont .next').onclick = () => {
 }
 
 document.querySelector('.time').onclick = () => {
-    if (!Number(localStorage.getItem('time_less')) || timeLeft > 20) { return }
+    if (!Number(localStorage.getItem('time_less')) || timeLeft > 35) { return }
 
     timeLeft += 10
     localStorage.setItem('time_less', Number(localStorage.getItem('time_less')) - 1)
